@@ -27,4 +27,30 @@ public class MainActivity extends AppCompatActivity {
 
         resultado.setText(String.valueOf(valor1+valor2));
     }
+    public void subtrair(View view){
+        double valor1 = Double.parseDouble(nmr1.getText().toString());
+        double valor2 = Double.parseDouble(nmr2.getText().toString());
+
+        resultado.setText(String.valueOf(valor1-valor2));
+    }
+    public void multiplicar(View view){
+        double valor1 = Double.parseDouble(nmr1.getText().toString());
+        double valor2 = Double.parseDouble(nmr2.getText().toString());
+
+        resultado.setText(String.valueOf(valor1*valor2));
+    }
+    public void dividir(View view){
+        double valor1 = Double.parseDouble(nmr1.getText().toString());
+        double valor2 = Double.parseDouble(nmr2.getText().toString());
+
+        if(valor2 != 0)
+            resultado.setText(String.valueOf(valor1/valor2));
+        else{
+            resultado.setText("Não é possível resolver uma divisão por 0");
+        }
+    }
+
+
+
+
 }

@@ -19,7 +19,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/numero1"
             android:textSize="18sp"
             android:textStyle="bold|italic"
             tools:text="Primeiro Número" />
@@ -32,13 +32,14 @@
             android:inputType="numberDecimal"
             android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/numero2"
             android:textSize="18sp"
             android:textStyle="bold|italic"
             tools:text="Segundo Número" />
@@ -50,7 +51,8 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btSomar"
@@ -58,7 +60,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
             android:onClick="somar"
-            android:text="+"
+            android:text="@string/botaoSoma"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -67,7 +69,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="-"
+            android:onClick="subtrair"
+            android:text="@string/botaoSubtracao"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -76,16 +79,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
+            android:onClick="multiplicar"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:text="x" />
+            tools:text="@string/botaoMultiplicacao" />
 
         <Button
             android:id="@+id/btDividir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="/"
+            android:onClick="dividir"
+            android:text="@string/botaoDivisão"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -93,7 +98,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/txtResultado"
             android:textSize="18sp"
             android:textStyle="bold|italic"
             tools:text="Resultado:" />
@@ -102,7 +107,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:text="TextView"
+            android:text="@string/resultadoOperaco"
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold"
