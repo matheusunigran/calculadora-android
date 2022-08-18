@@ -4,7 +4,7 @@
     <string name="numero2">Segundo Número</string>
     <string name="botaoSoma">+</string>
     <string name="botaoSubtracao">-</string>
-    <string name="botaoMultiplicacao">x</string>
+    <string name="botaoMultiplicacao">*</string>
     <string name="botaoDivisão">/</string>
     <string name="txtResultado">Resultado</string>
     <string name="resultadoOperaco">0</string>
